@@ -27,74 +27,74 @@
             then-layer = <FUN>;
         };
     };
-behaviors {
-super_bspc: super_backspace {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
 
-    mt_space_lshift: mt_space_lshift {
-      compatible = "zmk,behavior-mod-tap";
-      #binding-cells = <0>;
-      // tweak to preference:
-      tapping-term-ms = <200>;
-      quick-tap-ms = <150>;
-      flavor = "hold-preferred"; // or "balanced" / "tap-preferred"
-      bindings = <&kp SPACE>, <&kp LSHFT>;
-    };
+    behaviors {
+        super_bspc: super_backspace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
 
-    mt_bspc_rshift: mt_bspc_rshift {
-      compatible = "zmk,behavior-mod-tap";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      quick-tap-ms = <150>;
-      flavor = "hold-preferred";
-      bindings = <&kp BACKSPACE>, <&kp RSHFT>;
-    };
+        mt_space_lshift: mt_space_lshift {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "hold-preferred";
+            bindings = <&kp SPACE>, <&kp LSHFT>;
+        };
 
-    comma_semi: comma_semi {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_COMMA>, <&kp DE_SEMI>;
-        mods = <(MOD_LSFT)>;
-    };
+        mt_bspc_rshift: mt_bspc_rshift {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "hold-preferred";
+            bindings = <&kp BACKSPACE>, <&kp RSHFT>;
+        };
 
-    dot_colon: dot_colon {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_DOT>, <&kp DE_COLON>;
-        mods = <(MOD_LSFT)>;
-    };
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_COMMA>, <&kp DE_SEMI>;
+            mods = <(MOD_LSFT)>;
+        };
 
-    qmrk_excl: qmrk_excl {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_QMARK>, <&kp DE_EXCL>;
-        mods = <(MOD_LSFT)>;
-    };
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_DOT>, <&kp DE_COLON>;
+            mods = <(MOD_LSFT)>;
+        };
 
-    slh_morph: slh_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_FSLH>, <&kp DE_BSLH>;
-        mods = <(MOD_LSFT)>;
-    };
+        qmrk_excl: qmrk_excl {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_QMARK>, <&kp DE_EXCL>;
+            mods = <(MOD_LSFT)>;
+        };
 
-    amps_morph: amps_morph {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_AMPS>, <&kp DE_PIPE>;
-        mods = <(MOD_LSFT)>;
-    };
-    hash_apos: hash_apos {
-        compatible = "zmk,behavior-mod-morph";
-        #binding-cells = <0>;
-        bindings = <&kp DE_HASH>, <&kp DE_APOS>;
-        mods = <(MOD_LSFT)>;
-    };
-};
+        slh_morph: slh_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_FSLH>, <&kp DE_BSLH>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        amps_morph: amps_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_AMPS>, <&kp DE_PIPE>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        hash_apos: hash_apos {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DE_HASH>, <&kp DE_APOS>;
+            mods = <(MOD_LSFT)>;
+        };
     };
         keymap {
                 compatible = "zmk,keymap";
