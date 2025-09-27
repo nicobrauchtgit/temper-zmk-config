@@ -27,56 +27,74 @@
             then-layer = <FUN>;
         };
     };
-    behaviors {
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
-        super_bspc: super_backspace {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        smart_shft: smart_shift {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&caps_word>;
-            mods = <(MOD_LSFT)>;
-        };
-        comma_semi: comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT)>;
-        };
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT)>;
-        };
-        qmrk_excl: qmrk_excl {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp EXCL>;
-            mods = <(MOD_LSFT)>;
-        };
-        slh_morph: slh_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp BSLH>;
-            mods = <(MOD_LSFT)>;
-        };
-        amps_morph: amps_morph {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp PIPE>;
-            mods = <(MOD_LSFT)>;
-        };
+behaviors {
+super_bspc: super_backspace {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSPACE>, <&kp LA(BACKSPACE)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    mt_space_lshift: mt_space_lshift {
+      compatible = "zmk,behavior-mod-tap";
+      #binding-cells = <0>;
+      // tweak to preference:
+      tapping-term-ms = <200>;
+      quick-tap-ms = <150>;
+      flavor = "hold-preferred"; // or "balanced" / "tap-preferred"
+      bindings = <&kp SPACE>, <&kp LSHFT>;
+    };
+
+    mt_bspc_rshift: mt_bspc_rshift {
+      compatible = "zmk,behavior-mod-tap";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <150>;
+      flavor = "hold-preferred";
+      bindings = <&kp BACKSPACE>, <&kp RSHFT>;
+    };
+
+    comma_semi: comma_semi {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_COMMA>, <&kp DE_SEMI>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    dot_colon: dot_colon {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_DOT>, <&kp DE_COLON>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    qmrk_excl: qmrk_excl {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_QMARK>, <&kp DE_EXCL>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    slh_morph: slh_morph {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_FSLH>, <&kp DE_BSLH>;
+        mods = <(MOD_LSFT)>;
+    };
+
+    amps_morph: amps_morph {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_AMPS>, <&kp DE_PIPE>;
+        mods = <(MOD_LSFT)>;
+    };
+    hash_apos: hash_apos {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        bindings = <&kp DE_HASH>, <&kp DE_APOS>;
+        mods = <(MOD_LSFT)>;
+    };
+};
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -86,11 +104,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &kp DE_Q      &kp DE_W      &kp DE_E      &kp DE_R      &kp DE_T          &kp DE_Z      &kp DE_U      &kp DE_I      &kp DE_O      &kp DE_P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_A      &kp DE_S      &kp DE_D      &kp DE_F      &kp DE_G          &kp DE_H      &kp DE_J      &kp DE_K      &kp DE_L    &kp DE_O_UMLAUT
+       &kp DE_A      &kp DE_S      &kp DE_D      &kp DE_F      &kp DE_G          &kp DE_H      &kp DE_J      &kp DE_K      &kp DE_L    &hash_apos
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M   &comma_semi    &dot_colon    &qmrk_excl
+       &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo CMD       &mo NUM     &smart_shft        &kp SPACE      &mo NAV     &to DEFAULT
+                                   &mo CMD       &mo NUM    &mt_space_lshift  &mt_bspc_rshift  &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
