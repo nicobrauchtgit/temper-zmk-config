@@ -24,8 +24,8 @@ layers:
     - {t: DE QMARK, s: DE EXCL}
   - - cmd
     - num
-    - '&mt_space_lshift'
-    - '&mt_bspc_rshift'
+    - '&smart_shift'
+    - '&super_backspace'
     - nav
     - {t: default, h: toggle}
   game:
