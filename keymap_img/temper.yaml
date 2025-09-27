@@ -1,59 +1,59 @@
 layout: {zmk_keyboard: temper}
 layers:
   default:
-  - - Q
-    - W
-    - F
-    - P
-    - B
-    - J
-    - L
-    - U
-    - Y
-    - {t: '''', s: '"'}
-  - [A, R, S, T, G, M, N, E, I, O]
-  - - Z
-    - X
-    - C
-    - D
-    - V
-    - K
-    - H
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
+  - [DE Q, DE W, DE E, DE R, DE T, DE Z, DE U, DE I, DE O, DE P]
+  - - DE A
+    - DE S
+    - DE D
+    - DE F
+    - DE G
+    - DE H
+    - DE J
+    - DE K
+    - DE L
+    - {t: DE HASH, s: DE APOS}
+  - - DE Y
+    - DE X
+    - DE C
+    - DE V
+    - DE B
+    - DE N
+    - DE M
+    - {t: DE COMMA, s: DE SEMI}
+    - {t: DE DOT, s: DE COLON}
+    - {t: DE QMARK, s: DE EXCL}
   - - cmd
     - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
+    - '&mt_space_lshift'
+    - '&mt_bspc_rshift'
     - nav
     - {t: default, h: toggle}
   game:
   - - ↹
-    - Q
-    - W
-    - E
-    - R
+    - DE Q
+    - DE W
+    - DE E
+    - DE R
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - ⇧
-    - A
-    - S
-    - D
-    - F
+    - DE A
+    - DE S
+    - DE D
+    - DE F
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - ⌃
-    - Z
-    - X
-    - C
-    - V
+    - DE Y
+    - DE X
+    - DE C
+    - DE V
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -77,12 +77,12 @@ layers:
     - '9'
     - {t: '-', s: _}
   - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
+  - - {t: DE AMPS, s: DE PIPE}
     - <
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
     - '>'
-    - {t: /, s: \}
+    - {t: DE FSLH, s: DE BSLH}
     - '1'
     - '2'
     - '3'
@@ -168,11 +168,11 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   cmd:
-  - - ⌘Q
-    - ⌘W
-    - F
-    - Gui+P
-    - B
+  - - Gui+DE Q
+    - Gui+DE W
+    - Gui+DE E
+    - Gui+DE R
+    - Gui+DE T
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -182,17 +182,17 @@ layers:
     - ⌃
     - ⎇
     - ⌘
-    - Gui+G
+    - Gui+DE G
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - ⌘Z
-    - ⌘X
-    - ⌘C
-    - D
-    - ⌘V
+  - - Gui+DE Y
+    - Gui+DE X
+    - Gui+DE C
+    - Gui+DE V
+    - Gui+DE B
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
