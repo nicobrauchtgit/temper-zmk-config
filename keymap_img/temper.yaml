@@ -24,7 +24,7 @@ layers:
     - {t: DE QMARK, s: DE EXCL}
   - - cmd
     - num
-    - '&smart_shift'
+    - {t: ⇧, s: ⇪}
     - '&super_backspace'
     - nav
     - {t: default, h: toggle}
