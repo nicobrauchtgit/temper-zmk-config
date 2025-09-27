@@ -25,7 +25,7 @@ layers:
   - - cmd
     - num
     - {t: ⇧, s: ⇪}
-    - '&super_backspace'
+    - {t: BACKSPACE, s: Alt+BACKSPACE}
     - nav
     - {t: default, h: toggle}
   game:
