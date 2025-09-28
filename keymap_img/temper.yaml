@@ -24,8 +24,8 @@ layers:
     - {t: DE QMARK, s: DE EXCL}
   - - cmd
     - num
-    - {t: ⇧, s: ⇪}
-    - {t: BACKSPACE, s: Alt+BACKSPACE}
+    - {t: ⇧, h: SPACE}
+    - {t: RSHIFT, h: super bspc}
     - nav
     - {t: default, h: toggle}
   game:
