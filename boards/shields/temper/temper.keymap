@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/mt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <locale/keys_de.h>
 
@@ -98,7 +97,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo CMD       &mo NUM   &mt LSHFT SPACE &ht &kp RSHIFT &super_bspc RSHIFT &mo NAV  &to DEFAULT
+                                   &mo CMD       &mo NUM   &mt LSHFT SPACE    &ht RSHIFT BSPC  &mo NAV      &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
