@@ -25,7 +25,7 @@ layers:
   - - cmd
     - num
     - {t: SPACE, h: ⇧}
-    - '&ht RSHIFT BSPC'
+    - {t: BSPC, h: RSHIFT}
     - nav
     - {t: default, h: toggle}
   game:
