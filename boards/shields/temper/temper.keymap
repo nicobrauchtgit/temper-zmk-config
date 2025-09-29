@@ -25,6 +25,7 @@
             then-layer = <FUN>;
         };
     };
+
   combos {
     compatible = "zmk,combos";
     combo_esc {
@@ -113,19 +114,19 @@
                         >;
                 };
 
-                num_layer {
-                    bindings = <
+            num_layer {
+                bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp DE_N1     &kp DE_N2     &kp DE_N3     &kp DE_N4     &kp DE_N5         &kp DE_N6     &kp DE_N7     &kp DE_N8     &kp DE_N9     &kp DE_N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp DE_STAR   &kp DE_DQUO   &kp DE_LBRC   &kp DE_LPAR   &kp DE_EQUAL      &kp DE_AMPS   &kp DE_RPAR   &kp DE_RBRC   &kp DE_SQUO   &kp DE_PIPE
+      &kp DE_STAR   &kp DE_DQT    &kp DE_LBKT   &kp DE_LPAR   &kp DE_EQUAL      &kp DE_AMPS   &kp DE_RPAR   &kp DE_RBKT   &kp DE_SQT    &kp DE_PIPE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp DE_GRAVE  &kp DE_TILDE  &kp LG(X)     &kp LG(C)     &kp LG(V)         &kp DE_BSLH   &kp DE_FSLH   &kp DE_BSLH   &kp DE_PLUS   &kp DE_MINUS
+      &kp DE_GRAVE  &kp DE_TILDE  &kp LG(DE_X)  &kp LG(DE_C)  &kp LG(DE_V)      &kp DE_BSLH   &kp DE_FSLH   &kp DE_BSLH   &kp DE_PLUS   &kp DE_MINUS
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    ______        ______        ______            ______        ______        ______
+                                  ______        ______        ______            ______        ______        ______
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
-                    >;
-            };
+                        >;
+};
 
                 nav_layer {
                         bindings = <
