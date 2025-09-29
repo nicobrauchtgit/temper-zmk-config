@@ -94,8 +94,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   fun:
-  - - {t: game, h: toggle}
-    - MUTE
+  - - MUTE
     - VOL DN
     - VOL UP
     - OUT USB
