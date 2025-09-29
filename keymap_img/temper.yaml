@@ -22,38 +22,38 @@ layers:
     - {t: DE COMMA, s: DE SEMI}
     - {t: DE DOT, s: DE COLON}
     - {t: DE QMARK, s: DE EXCL}
-  - - cmd
-    - num
+  - - fun
+    - {t: num, h: toggle}
     - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
     - nav
     - {t: default, h: toggle}
   num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: DE AMPS, s: DE PIPE}
-    - <
+  - [DE 1, DE 2, DE 3, DE 4, DE 5, DE 6, DE 7, DE 8, '9', DE 0]
+  - - '*'
+    - '"'
     - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: DE FSLH, s: DE BSLH}
-    - '1'
-    - '2'
-    - '3'
+    - (
     - {t: '=', s: +}
+    - '&'
+    - )
+    - {t: ']', s: '}'}
+    - ''''
+    - '|'
+  - - {t: '`', s: '~'}
+    - '~'
+    - AC CUT
+    - AC COPY
+    - AC PASTE
+    - /
+    - \
+    - '2'
+    - KP PLUS
+    - KP MINUS
   - - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
-    - '0'
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
@@ -124,9 +124,14 @@ layers:
     - F2
     - F3
     - F10
-  - - {t: ▽, type: trans}
-    - {type: held}
+  - - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+combos:
+- p: [17, 18]
+  k: ESC
+- p: [12, 13]
+  k: ENTER
