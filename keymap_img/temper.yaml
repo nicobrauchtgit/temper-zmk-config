@@ -30,8 +30,8 @@ layers:
     - {t: default, h: toggle}
   num:
   - [DE 1, DE 2, DE 3, DE 4, DE 5, DE 6, DE 7, DE 8, DE 9, DE 0]
-  - [DE STAR, DE DQUO, DE LBRC, DE LPAR, DE EQUAL, DE AMPS, DE RPAR, DE RBRC, DE SQUO, DE PIPE]
-  - [DE GRAVE, DE TILDE, ⌘X, ⌘C, ⌘V, DE BSLH, DE FSLH, DE BSLH, DE PLUS, DE MINUS]
+  - [DE STAR, DE DQT, DE LBKT, DE LPAR, DE EQUAL, DE AMPS, DE RPAR, DE RBKT, DE SQT, DE PIPE]
+  - [DE GRAVE, DE TILDE, Gui+DE X, Gui+DE C, Gui+DE V, DE BSLH, DE FSLH, DE BSLH, DE PLUS, DE MINUS]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
