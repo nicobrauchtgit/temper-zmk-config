@@ -94,7 +94,8 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   fun:
-  - - MUTE
+  - - {t: ▽, type: trans}
+    - MUTE
     - VOL DN
     - VOL UP
     - OUT USB
