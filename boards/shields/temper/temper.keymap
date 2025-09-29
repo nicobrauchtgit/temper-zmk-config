@@ -26,6 +26,22 @@
         };
     };
 
+/ {
+  combos {
+    compatible = "zmk,combos";
+    combo_esc {
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&kp ESC>;
+    };
+    combo_esc {
+        timeout-ms = <50>;
+        key-positions = <12 13>;
+        bindings = <&kp ENTER>;
+        };
+    };
+  };
+
     behaviors {
         super_bspc: super_backspace {
             compatible = "zmk,behavior-mod-morph";
@@ -95,20 +111,20 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN      &mo NUM   &mt LSHFT SPACE    &mt RSHFT BSPC    &mo NAV     &to DEFAULT
+                                   &mo FUN       &tog NUM   &mt LSHFT SPACE   &mt RSHFT BSPC   &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
                 num_layer {
                         bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-      &kp TILDE       &kp AT       &kp LBRC      &kp RBRC     &kp PRCNT          &kp STAR       &kp N7        &kp N8        &kp N9      &kp MINUS
+      &kp DE_N1      &kp DE_N2    &kp DE_N3     &kp DE_N4    &kp DE_N5          &kp DE_N6     &kp DE_N7     &kp DE_N8      &kp N9      &kp DE_N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &kp CARET      &kp HASH      &kp LPAR      &kp RPAR      &kp DLLR         &kp UNDER       &kp N4        &kp N5        &kp N6      &kp PLUS
+      &kp STAR       &kp DQT      &kp LBKT      &kp LPAR      &kp EQUAL          &kp AMPS      &kp RPAR      &kp RBKT      &kp SQT      &kp PIPE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-      &amps_morph     &kp LT       &kp LBKT      &kp RBKT       &kp GT          &slh_morph      &kp N1        &kp N2        &kp N3      &kp EQUAL
+      &kp GRAVE     &kp TILDE  &kp C_AC_CUT   &kp C_AC_COPY  &kp C_AC_PASTE     &kp FSLH      &kp BSLH      &kp N2      &kp KP_PLUS   &kp KP_MINUS
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                    ______        ______        ______            &kp N0        ______        ______
+                                    ______        ______        ______            ______        ______        ______
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
