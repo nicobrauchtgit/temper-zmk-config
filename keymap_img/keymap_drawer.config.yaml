@@ -310,8 +310,92 @@ parse_config:
     'LG(V)': '⌘V'
     'LC(TAB)': '⌃↹'
     'LS(LC(TAB))': '⌃⇧↹'
-#   zmk_combos:
-#     combo_tog_nav_word: {'a': 'bottom', 'o': -0.25}
-#     combo_tog_num_word: {'a': 'bottom', 'o': 0.0}
-#     combo_return: {'a': 'bottom', 'o': 0.3}
-#     combo_capsword: {'k': "Caps\nWord"}
+
+    # German (DE_) keycodes for keymap-drawer display
+    # Letters (QWERTZ: Y/Z swapped)
+    DE_A: {t: 'a', s: 'A'}
+    DE_B: {t: 'b', s: 'B'}
+    DE_C: {t: 'c', s: 'C'}
+    DE_D: {t: 'd', s: 'D'}
+    DE_E: {t: 'e', s: 'E'}
+    DE_F: {t: 'f', s: 'F'}
+    DE_G: {t: 'g', s: 'G'}
+    DE_H: {t: 'h', s: 'H'}
+    DE_I: {t: 'i', s: 'I'}
+    DE_J: {t: 'j', s: 'J'}
+    DE_K: {t: 'k', s: 'K'}
+    DE_L: {t: 'l', s: 'L'}
+    DE_M: {t: 'm', s: 'M'}
+    DE_N: {t: 'n', s: 'N'}
+    DE_O: {t: 'o', s: 'O'}
+    DE_P: {t: 'p', s: 'P'}
+    DE_Q: {t: 'q', s: 'Q'}
+    DE_R: {t: 'r', s: 'R'}
+    DE_S: {t: 's', s: 'S'}
+    DE_T: {t: 't', s: 'T'}
+    DE_U: {t: 'u', s: 'U'}
+    DE_V: {t: 'v', s: 'V'}
+    DE_W: {t: 'w', s: 'W'}
+    DE_X: {t: 'x', s: 'X'}
+    DE_Y: {t: 'z', s: 'Z'}
+    DE_Z: {t: 'y', s: 'Y'}
+
+    # Umlauts and ß
+    DE_AE: {t: 'ä', s: 'Ä'}
+    DE_OE: {t: 'ö', s: 'Ö'}
+    DE_UE: {t: 'ü', s: 'Ü'}
+    DE_SS: {t: 'ß', s: '?'}
+
+    # Number row (German)
+    DE_N1: {t: '1', s: '!'}
+    DE_N2: {t: '2', s: '"'}
+    DE_N3: {t: '3', s: '§'}
+    DE_N4: {t: '4', s: '$'}
+    DE_N5: {t: '5', s: '%'}
+    DE_N6: {t: '6', s: '&'}
+    DE_N7: {t: '7', s: '/'}
+    DE_N8: {t: '8', s: '('}
+    DE_N9: {t: '9', s: ')'}
+    DE_N0: {t: '0', s: '='}
+
+    # Punctuation pairs commonly used in your keymap
+    DE_COMMA: {t: ',', s: ';'}
+    DE_SEMI: {t: ';', s: ':'}
+    DE_DOT: {t: '.', s: ':'}
+    DE_COLON: ':'
+    DE_QMARK: '?'
+    DE_EXCL: '!'
+    DE_GRAVE: {t: '`', s: '~'}
+    DE_TILDE: '~'
+
+    # Slashes and pipes
+    DE_FSLH: '/'
+    DE_BSLH: '\'
+    DE_PIPE: '|'
+    DE_AMPS: '&'
+    DE_STAR: '*'
+
+    # Quotes and hash
+    DE_SQT: ''''
+    DE_DQT: '"'
+    DE_HASH: '#'
+    DE_APOS: {t: "'", s: '"'}
+    DE_AT_SIGN: '@'
+
+    # Math and symbols
+    DE_PLUS: {t: '+', s: '*'}
+    DE_MINUS: {t: '-', s: '_'}
+    DE_EQUAL: {t: '=', s: '+'}
+
+    # Brackets/braces/parentheses
+    DE_LPAR: '('
+    DE_RPAR: ')'
+    DE_LBKT: {t: '[', s: '{'}
+    DE_RBKT: {t: ']', s: '}'}
+    DE_LEFT_BRACKET: '['
+    DE_RIGHT_BRACKET: ']'
+    DE_LEFT_BRACE: '{'
+    DE_RIGHT_BRACE: '}'
+
+    # Angle bracket key common on DE layouts
+    DE_LESS_THAN: {t: '<', s: '>'}
