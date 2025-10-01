@@ -32,7 +32,7 @@ layers:
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
   - - fun
-    - '&st 1'
+    - {t: num, h: sticky}
     - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
     - nav
@@ -69,7 +69,7 @@ layers:
     - {t: +, s: '*'}
     - {t: '-', s: _}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
