@@ -75,19 +75,28 @@
     };
 
     behaviors {
-        sdel: smart_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BSPC>, <&kp DELETE>;
-            mods = <(MOD_LSFT)>;
-        };
 
-        rshift_sdel_ht: rshift_sdel_hold_tap {
+        hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <<&kp RSHFT> &sdel>;
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <1 2 3 4 5 11 12 13 14 15 21 22 23 24 25 31 32 33>; // List of keys on the right side of the keyboard
+            hold-trigger-on-release;
+        };
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <6 7 8 9 10 16 17 18 19 20 26 26 28 29 30 34 35 36>; // List of keys on the left side of the keyboard
+            hold-trigger-on-release;
         };
 
         smart_shft: smart_shift {
@@ -147,11 +156,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &kp DE_Q      &kp DE_W      &kp DE_E      &kp DE_R      &kp DE_T          &kp DE_Z      &kp DE_U      &kp DE_I      &kp DE_O      &kp DE_P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_A      &kp DE_S      &kp DE_D      &kp DE_F      &kp DE_G          &kp DE_H      &kp DE_J      &kp DE_K      &kp DE_L    &hash_apos
+       &kp DE_A      &kp DE_S  &hml LALT  DE_D &hml LGUI DE_F  &kp DE_G          &kp DE_H      &kp DE_J      &kp DE_K      &kp DE_L    &hash_apos
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NUM  &mt LSHFT SPACE    &rshift_sdel_ht   &mo NAV     &to DEFAULT
+                                   &mo FUN       &mo NUM  &mt LSHFT SPACE    &mt RSHFT BSPC   &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
