@@ -241,8 +241,7 @@ path {
 </g>
 <g transform="translate(463, 246) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
-<text x="0" y="0" class="key tap">sdel</text>
-<text x="0" y="40" class="key hold">⇧</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;shft_back</tspan></text>
 </g>
 <g transform="translate(533, 235) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -256,12 +255,12 @@ path {
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
-<text x="609" y="95" class="combo tap">ESC</text>
+<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
+<text x="178" y="95" class="combo tap">ESC</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
-<text x="178" y="95" class="combo tap">ENTER</text>
+<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
+<text x="609" y="95" class="combo tap">ENTER</text>
 </g>
 </g>
 </g>
@@ -442,12 +441,12 @@ path {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
-<text x="609" y="95" class="combo tap">ESC</text>
+<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
+<text x="178" y="95" class="combo tap">ESC</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
-<text x="178" y="95" class="combo tap">ENTER</text>
+<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
+<text x="609" y="95" class="combo tap">ENTER</text>
 </g>
 </g>
 </g>
@@ -603,12 +602,12 @@ path {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
-<text x="609" y="95" class="combo tap">ESC</text>
+<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
+<text x="178" y="95" class="combo tap">ESC</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
-<text x="178" y="95" class="combo tap">ENTER</text>
+<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
+<text x="609" y="95" class="combo tap">ENTER</text>
 </g>
 </g>
 </g>
@@ -774,12 +773,12 @@ path {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
-<text x="609" y="95" class="combo tap">ESC</text>
+<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
+<text x="178" y="95" class="combo tap">ESC</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="164" y="82" width="28" height="26" class="combo"/>
-<text x="178" y="95" class="combo tap">ENTER</text>
+<rect rx="6" ry="6" x="595" y="82" width="28" height="26" class="combo"/>
+<text x="609" y="95" class="combo tap">ENTER</text>
 </g>
 </g>
 </g>

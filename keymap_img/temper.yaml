@@ -34,7 +34,7 @@ layers:
   - - fun
     - num
     - {t: SPACE, h: ⇧}
-    - {t: sdel, h: ⇧}
+    - '&shft_back'
     - nav
     - {t: default, h: toggle}
   num:
@@ -149,7 +149,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
 combos:
-- p: [16, 17]
-  k: ESC
 - p: [12, 13]
+  k: ESC
+- p: [16, 17]
   k: ENTER
