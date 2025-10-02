@@ -34,7 +34,7 @@ layers:
   - - fun
     - num
     - {t: SPACE, h: ⇧}
-    - '&shft_back'
+    - '&rshift_sdel_ht'
     - nav
     - {t: default, h: toggle}
   num:
