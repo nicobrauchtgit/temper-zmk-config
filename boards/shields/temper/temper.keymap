@@ -75,7 +75,7 @@
     };
 
     behaviors {
-        gresc: grave_escape {
+        sdel: smart_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DELETE>;
@@ -143,7 +143,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NUM  &mt LSHFT SPACE   &mt RSHFT BSPC   &mo NAV     &to DEFAULT
+                                   &mo FUN       &mo NUM  &mt LSHFT SPACE   &mt RSHFT sdel   &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
