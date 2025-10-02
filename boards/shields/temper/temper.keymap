@@ -89,9 +89,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp RSHFT>, <&sdel>;
         };
-    };
-    };
-};
 
         smart_shft: smart_shift {
             compatible = "zmk,behavior-mod-morph";
