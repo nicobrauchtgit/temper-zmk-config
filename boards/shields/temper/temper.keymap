@@ -82,7 +82,7 @@
             mods = <(MOD_LSFT)>;
         };
 
-       mo_tog: rshft {
+       shft_back: rshift_superback {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             flavor = "balanced";
@@ -154,7 +154,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NUM  &mt LSHFT SPACE   &mt RSHFT &sdel   &mo NAV     &to DEFAULT
+                                   &mo FUN       &mo NUM  &mt LSHFT SPACE       &shft_back     &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
