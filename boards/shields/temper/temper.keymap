@@ -82,12 +82,13 @@
             mods = <(MOD_LSFT)>;
         };
 
-       shft_back: rshift_superback {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&kp RSHFT>, <&sdel>;
+        rshift_sdel_ht: rshift_sdel_hold_tap {
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <0>;
+          flavor = "hold-preferred";
+          tapping-term-ms = <200>;
+          behavior-hold = <&kp RSHFT>;
+          behavior-tap = <&sdel>;
         };
 
         smart_shft: smart_shift {
@@ -151,7 +152,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NUM  &mt LSHFT SPACE       &shft_back     &mo NAV     &to DEFAULT
+                                   &mo FUN       &mo NUM  &mt LSHFT SPACE    &rshift_sdel_ht   &mo NAV     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
