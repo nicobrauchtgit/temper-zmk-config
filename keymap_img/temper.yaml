@@ -34,7 +34,7 @@ layers:
   - - fun
     - num
     - {t: SPACE, h: ⇧}
-    - {t: BSPC, h: ⇧}
+    - {t: sdel, h: ⇧}
     - nav
     - {t: default, h: toggle}
   num:
@@ -94,7 +94,7 @@ layers:
     - ↓
     - ↑
     - →
-    - {t: BSPC, s: DELETE}
+    - {t: ESC, s: '`'}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
