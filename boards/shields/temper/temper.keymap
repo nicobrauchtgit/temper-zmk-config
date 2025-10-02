@@ -82,6 +82,17 @@
             mods = <(MOD_LSFT)>;
         };
 
+       mo_tog: rshft {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp RSHFT>, <&sdel>;
+        };
+    };
+    };
+};
+
         smart_shft: smart_shift {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
