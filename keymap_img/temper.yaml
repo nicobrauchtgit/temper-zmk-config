@@ -13,8 +13,8 @@ layers:
     - {t: p, s: P}
   - - {t: a, s: A}
     - {t: s, s: S}
-    - {t: d, s: D}
-    - {t: f, s: F}
+    - {t: d, h: ⎇, s: D}
+    - {t: f, h: ⌘, s: F}
     - {t: g, s: G}
     - {t: h, s: H}
     - {t: j, s: J}
@@ -34,7 +34,7 @@ layers:
   - - fun
     - num
     - {t: SPACE, h: ⇧}
-    - '&rshift_sdel_ht'
+    - {t: BSPC, h: ⇧}
     - nav
     - {t: default, h: toggle}
   num:
