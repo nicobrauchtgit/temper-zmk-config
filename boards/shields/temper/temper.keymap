@@ -156,11 +156,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &kp DE_Q      &kp DE_W      &kp DE_E      &kp DE_R      &kp DE_T          &kp DE_Z      &kp DE_U      &kp DE_I      &kp DE_O      &kp DE_P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_A  &hml LCTRL DE_S  &hml LALT  DE_D &hml LGUI DE_F  &kp DE_G   &hmr RGUI DE_H  &hmr RALT DE_J &hmr RCTRL DE_K &kp DE_L    &hash_apos
+       &kp DE_A  &hml LCTRL DE_S  &hml LALT  DE_D &hml LGUI DE_F  &kp DE_G     &kp DE_H   &hmr RGUI DE_J &hmr RALT DE_K &hmr RCTRL DE_L &hash_apos
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
        &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NUM  &mt LSHFT SPACE    &mt RSHFT BSPC   &mo NAV     &to DEFAULT
+                                   &mo FUN       &mo NAV  &mt LSHFT SPACE     &mt RSHFT BSPC   &mo NUM    &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
