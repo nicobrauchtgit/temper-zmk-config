@@ -16,10 +16,10 @@ layers:
     - {t: d, h: ⎇, s: D}
     - {t: f, h: ⌘, s: F}
     - {t: g, s: G}
-    - {t: h, h: ⌘, s: H}
-    - {t: j, h: ⎇, s: J}
-    - {t: k, h: ⌃, s: K}
-    - {t: l, s: L}
+    - {t: h, s: H}
+    - {t: j, h: ⌘, s: J}
+    - {t: k, h: ⎇, s: K}
+    - {t: l, h: ⌃, s: L}
     - {t: '#', s: ''''}
   - - {t: z, s: Z}
     - {t: x, s: X}
@@ -32,10 +32,10 @@ layers:
     - {t: ., s: ':'}
     - {t: '?', s: '!'}
   - - fun
-    - num
+    - nav
     - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
-    - nav
+    - num
     - {t: default, h: toggle}
   num:
   - - {t: '1', s: '!'}
@@ -69,10 +69,10 @@ layers:
     - {t: +, s: '*'}
     - {t: '-', s: _}
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
   - - {t: ▽, type: trans}
@@ -106,10 +106,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   fun:
   - - {t: ▽, type: trans}
