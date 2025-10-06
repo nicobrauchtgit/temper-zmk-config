@@ -12,13 +12,13 @@ layers:
     - {t: o, s: O}
     - {t: p, s: P}
   - - {t: a, s: A}
-    - {t: s, s: S}
+    - {t: s, h: ⌃, s: S}
     - {t: d, h: ⎇, s: D}
     - {t: f, h: ⌘, s: F}
     - {t: g, s: G}
-    - {t: h, s: H}
-    - {t: j, s: J}
-    - {t: k, s: K}
+    - {t: h, h: ⌘, s: H}
+    - {t: j, h: ⎇, s: J}
+    - {t: k, h: ⌃, s: K}
     - {t: l, s: L}
     - {t: '#', s: ''''}
   - - {t: z, s: Z}
