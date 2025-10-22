@@ -33,8 +33,8 @@ layers:
     - {t: '-', s: _}
   - - fun
     - nav
-    - '&hrm LSHFT SPACE'
-    - '&hrm RSHFT BSPC'
+    - {t: SPACE, h: ⇧}
+    - {t: BSPC, h: ⇧}
     - num
     - {t: default, h: toggle}
   num:
