@@ -192,7 +192,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp DE_SECT  &kp DE_PLUS   &kp LS(GRAVE)  &kp DE_MINUS  &kp DE_PIPE        &kp DE_DQT  &kp DE_COLON   &kp DE_SQT     &kp TAB   &kp LG(LS(DE_P))
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp DE_EXCL   &kp DE_STAR   &kp GRAVE    &kp DE_EQUAL  &kp DE_FSLH        &kp DE_BSLH     &kp brace      &kp par      &kp brkt   &kp DE_GRAVE
+     &kp DE_EXCL   &kp DE_STAR   &kp GRAVE    &kp DE_EQUAL  &kp DE_FSLH        &kp DE_BSLH     &brace        &par           &brkt     &kp DE_GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp DE_TILDE &kp DE_AT_SIGN &kp DE_DLLR   &kp DE_PRCNT   &kp DE_AMPS    &kp LG(LS(DE_Z)) &kp LG(DE_S)  &kp DE_HASH   &kp DE_LT     &kp DE_UNDER
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
