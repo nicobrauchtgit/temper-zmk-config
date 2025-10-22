@@ -156,11 +156,11 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
        &kp DE_Q      &kp DE_W      &kp DE_E      &kp DE_R      &kp DE_T          &kp DE_Z      &kp DE_U      &kp DE_I      &kp DE_O      &kp DE_P   
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_A  &hml LCTRL DE_S  &hml LALT  DE_D &hml LGUI DE_F  &kp DE_G     &kp DE_H   &hmr RGUI DE_J &hmr RALT DE_K &hmr RCTRL DE_L &hash_apos
+       &kp DE_A  &hml LCTRL DE_S  &hml LALT  DE_D &hml LGUI DE_F  &kp DE_G     &kp DE_H   &hmr RGUI DE_J &hmr RALT DE_K &hmr RCTRL DE_L &qmrk_excl
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-       &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon    &qmrk_excl
+       &kp DE_Y      &kp DE_X      &kp DE_C      &kp DE_V      &kp DE_B          &kp DE_N      &kp DE_M    &comma_semi    &dot_colon   &kp DE_MINUS
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                   &mo FUN       &mo NAV  &mt LSHFT SPACE     &mt RSHFT BSPC   &mo NUM    &to DEFAULT
+                                   &mo FUN       &mo NAV  &hrm LSHFT SPACE    &hrm RSHFT BSPC  &mo NUM     &to DEFAULT
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
                         >;
                 };
@@ -170,9 +170,9 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
       &kp DE_N1     &kp DE_N2     &kp DE_N3     &kp DE_N4     &kp DE_N5         &kp DE_N6     &kp DE_N7     &kp DE_N8     &kp DE_N9     &kp DE_N0
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp DE_PIPE  &kp DE_DLLR    &kp DE_LT     &kp DE_DQT   &kp DE_EQUAL      &kp DE_FSLH   &kp DE_LPAR  &kp DE_LBKT &kp DE_LEFT_BRACE &kp DE_GRAVE
+     &kp DE_PIPE  &kp DE_DLLR    &kp DE_GT     &kp DE_DQT   &kp DE_EQUAL      &kp DE_FSLH   &kp DE_LPAR  &kp DE_LBKT &kp DE_LEFT_BRACE &kp DE_GRAVE
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp DE_TILDE &kp DE_AT_SIGN &kp LG(DE_X)  &kp LG(DE_C)  &kp LG(DE_V)      &kp DE_BSLH   &kp DE_AMPS   &kp DE_STAR   &kp DE_PLUS   &kp DE_MINUS
+     &kp DE_TILDE &kp DE_AT_SIGN &kp DE_LT     &kp LT        &kp GT            &kp DE_BSLH   &kp DE_AMPS   &kp DE_STAR   &kp DE_PLUS   &kp BSLH
 // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                   ______        ______        ______              ______        ______        ______
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
