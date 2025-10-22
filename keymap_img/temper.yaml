@@ -31,13 +31,13 @@ layers:
     - {t: ',', s: ;}
     - {t: ., s: ':'}
     - {t: '-', s: _}
-  - - fun
-    - nav
+  - - num
+    - code
     - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
     - num
     - {t: default, h: toggle}
-  num:
+  code:
   - - DE SECT
     - {t: +, s: '*'}
     - {t: Sft+`, s: Sft+~}
@@ -69,10 +69,10 @@ layers:
     - DE LT
     - DE UNDER
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
   - - {t: ▽, type: trans}
@@ -106,7 +106,44 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  num:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - DEL
+    - {t: '7', s: /}
+    - {t: '8', s: (}
+    - {t: '9', s: )}
+    - BSPC
+  - - {t: ⇧, h: sticky}
+    - {t: ⌃, h: sticky}
+    - {t: ⎇, h: sticky}
+    - {t: ⌘, h: sticky}
+    - {t: ▽, type: trans}
+    - {t: '0', s: '='}
+    - {t: '4', s: $}
+    - {t: '5', s: '%'}
+    - {t: '6', s: '&'}
+    - {t: ESC, s: '`'}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: '1', s: '!'}
+    - {t: '2', s: '"'}
+    - {t: '3', s: §}
+    - {t: ▽, type: trans}
+  - - {type: held}
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -142,8 +179,8 @@ layers:
     - F2
     - F3
     - F10
-  - - {type: held}
-    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
