@@ -169,7 +169,6 @@
             mods = <(MOD_LSFT)>;
         };
     };
-    };
         keymap {
                 compatible = "zmk,keymap";
 
