@@ -20,7 +20,7 @@ layers:
     - {t: j, h: ⌘, s: J}
     - {t: k, h: ⎇, s: K}
     - {t: l, h: ⌃, s: L}
-    - {t: '#', s: ''''}
+    - {t: '?', s: '!'}
   - - {t: z, s: Z}
     - {t: x, s: X}
     - {t: c, s: C}
@@ -30,11 +30,11 @@ layers:
     - {t: m, s: M}
     - {t: ',', s: ;}
     - {t: ., s: ':'}
-    - {t: '?', s: '!'}
+    - {t: '-', s: _}
   - - fun
     - nav
-    - {t: SPACE, h: ⇧}
-    - {t: BSPC, h: ⇧}
+    - '&hrm LSHFT SPACE'
+    - '&hrm RSHFT BSPC'
     - num
     - {t: default, h: toggle}
   num:
@@ -50,7 +50,7 @@ layers:
     - {t: '0', s: '='}
   - - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
     - DE DLLR
-    - DE LT
+    - DE GT
     - '"'
     - {t: '=', s: +}
     - /
@@ -60,14 +60,14 @@ layers:
     - {t: '`', s: '~'}
   - - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD N)))
     - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD L)))
-    - {t: Gui+x, s: Gui+X}
-    - {t: Gui+c, s: Gui+C}
-    - {t: Gui+v, s: Gui+V}
+    - DE LT
+    - <
+    - '>'
     - \
     - '&'
     - '*'
     - {t: +, s: '*'}
-    - {t: '-', s: _}
+    - \
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
