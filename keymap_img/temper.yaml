@@ -33,7 +33,7 @@ layers:
     - {t: '-', s: _}
   - - fun
     - nav
-    - '&hmrl LSHFT SPACE'
+    - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
     - num
     - {t: default, h: toggle}
