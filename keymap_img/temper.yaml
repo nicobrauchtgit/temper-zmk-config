@@ -50,7 +50,7 @@ layers:
     - {t: '0', s: '='}
   - - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
     - DE DLLR
-    - DE GT
+    - \
     - '"'
     - {t: '=', s: +}
     - /
