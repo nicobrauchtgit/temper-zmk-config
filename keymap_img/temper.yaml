@@ -33,41 +33,41 @@ layers:
     - {t: '-', s: _}
   - - fun
     - nav
-    - {t: SPACE, h: ⇧}
+    - '&hmrl LSHFT SPACE'
     - {t: BSPC, h: ⇧}
     - num
     - {t: default, h: toggle}
   num:
-  - - {t: '1', s: '!'}
-    - {t: '2', s: '"'}
-    - {t: '3', s: §}
-    - {t: '4', s: $}
-    - {t: '5', s: '%'}
-    - {t: '6', s: '&'}
-    - {t: '7', s: /}
-    - {t: '8', s: (}
-    - {t: '9', s: )}
-    - {t: '0', s: '='}
-  - - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
-    - DE DLLR
-    - {t: '`', s: '~'}
+  - - DE SECT
+    - {t: +, s: '*'}
+    - {t: Sft+`, s: Sft+~}
+    - {t: '-', s: _}
+    - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND)))
     - '"'
+    - ':'
+    - ''''
+    - ↹
+    - {t: Gui+Sft+p, s: Gui+Sft+P}
+  - - '!'
+    - '*'
+    - {t: '`', s: '~'}
     - {t: '=', s: +}
     - /
-    - (
-    - {t: '[', s: '{'}
-    - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))
+    - \
+    - {t: '(RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK)))', s: '(RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS)))'}
+    - {t: (, s: )}
+    - {t: '(RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT)))', s: '(RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET)))'}
     - {t: '`', s: '~'}
   - - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD N)))
     - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD L)))
-    - DE LT
-    - <
-    - '>'
-    - \
+    - DE DLLR
+    - DE PRCNT
     - '&'
-    - '*'
-    - {t: +, s: '*'}
-    - \
+    - {t: Gui+Sft+y, s: Gui+Sft+Y}
+    - {t: Gui+s, s: Gui+S}
+    - '#'
+    - DE LT
+    - DE UNDER
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
