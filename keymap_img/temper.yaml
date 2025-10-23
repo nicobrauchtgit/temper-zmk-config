@@ -32,10 +32,10 @@ layers:
     - {t: ., s: ':'}
     - {t: '-', s: _}
   - - num
-    - code
+    - nav
     - {t: SPACE, h: ⇧}
     - {t: BSPC, h: ⇧}
-    - num
+    - code
     - {t: default, h: toggle}
   code:
   - - DE SECT
@@ -69,10 +69,10 @@ layers:
     - DE LT
     - DE UNDER
   - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   nav:
   - - {t: ▽, type: trans}
@@ -106,7 +106,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -183,7 +183,7 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - {t: ▽, type: trans}
 combos:
 - p: [12, 13]
